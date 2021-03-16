@@ -75,6 +75,15 @@ p {
     background-color: transparent;
     color:#ff2b4a;
 }
+.section-title {
+    text-align: center;
+    margin-bottom: 6rem;;
+}
+.section-title h2 {
+    font-size: 4rem;
+    color: #000;
+    margin: 1.5rem 0;
+}
 /*================================
 
 hero
@@ -166,4 +175,48 @@ About Section
 }
 .about-grid-item p {
     margin: 2rem 0;
+}
+/*================================
+
+Process Section
+
+=============================*/
+#process {
+    background-color: #f6f6f6;
+}
+.process-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1rem;
+}
+.process-grid-item {
+    background-color: #000;
+    color: #fff;
+    padding: 7rem 0;
+    text-align: center;
+}
+.process-grid-item h4 {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+.process-grid-item:nth-child(1){
+    background-color: #10c6fc;
+}
+.process-grid-item:nth-child(2){
+    background-color: #835aeb;
+}
+.process-grid-item:nth-child(3){
+    background-color: #002453;
+}
+.process-grid-item:nth-child(4){
+    background-color: #ff2b4a;
+}
+.process-icon img {
+    margin-bottom: 3rem;
+   
+}
+.process-icon ion-icon{
+    font-size: 3.8rem;
+    color: #fff;
+    margin-bottom: 3rem;
 }
