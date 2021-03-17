@@ -15,6 +15,8 @@ Description: This is single simple web site
 2.Reusable Component
 3.Hero Section
 4.About section
+5.process section
+6.Exp section
 
 =============================*/
 
@@ -83,6 +85,18 @@ p {
     font-size: 4rem;
     color: #000;
     margin: 1.5rem 0;
+}
+h3{
+
+    font-size: 2.6rem;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 4rem;;
+}
+h4 {
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 2rem;
 }
 /*================================
 
@@ -219,4 +233,35 @@ Process Section
     font-size: 3.8rem;
     color: #fff;
     margin-bottom: 3rem;
+}
+/*================================
+
+exp Section
+
+=============================*/
+#exp {
+    background: url("images/bg2.jpg") no-repeat center / cover fixed;
+}
+.exp-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.5rem;
+}
+.exp-grid-item {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 4.5rem;
+    
+}
+.job span{
+    font-size: 1.6rem;
+    color: #fff;
+}
+.job p {
+  margin: 2rem 0;
+  color: #fff;
+}
+hr {
+    border: 0;
+    border-bottom: .1rem solid #fff;
+    margin-bottom: 2rem;
 }
