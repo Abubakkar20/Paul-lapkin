@@ -18,6 +18,8 @@ Description: This is single simple web site
 5.process section
 6.Exp section
 7.work section
+8.testimonial section
+9.contact section
 
 =============================*/
 
@@ -73,6 +75,7 @@ p {
     text-align: center;
     font-size: 1.6rem;
     transition: 1.5s;
+    cursor: pointer;
 }
 .btn:hover {
     background-color: transparent;
@@ -301,4 +304,81 @@ Work Section
 }
 .work-grid-item:nth-child(5){
     grid-column: 1/3;
+}
+/*================================
+
+TM section
+
+=============================*/
+#tm {
+    background:#000 url(images/testimonial.jpg) no-repeat center top /cover;
+
+}
+.tm-grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.quote {
+    height: 3.5rem;
+}
+.signature {
+    height: 3.5rem;
+}
+.tm-grid-item p {
+    margin: 3.5rem 0;
+    width:90%;
+}
+.tm-grid-item  h4{
+    color: #000;
+    margin-top: 2rem;;
+}
+.role {
+    font-size: 1.6rem;
+}
+/*================================
+
+contact section
+
+=============================*/
+#contact {
+    background:#000 url(images/bg3.jpg) no-repeat center /cover fixed;
+}
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.5rem;;
+}
+.contact-grid-item:nth-child(1), .nested-contact-grid-item {
+    background-color: rgba(0, 0, 0, .85);
+    padding: 4.5rem;
+}
+.contact-grid-item .btn {
+    width: 100%;
+    margin-top: 1.5rem;;
+}
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    border: .2rem solid #fff;
+    background-color: transparent;
+    font-size: 1.6rem;
+    color: #fff;
+    padding: 1rem 1.5rem;
+    width: 100%;
+    margin: .8rem 0;
+}
+form textarea {
+    height: 15rem;
+}
+.nested-contact-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+.nested-contact-grid-item p{
+    color:#fff;
+}
+.nested-contact-grid-item h3 {
+    margin-bottom: 1.8rem;
 }
