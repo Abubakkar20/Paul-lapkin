@@ -13,17 +13,19 @@
         <link rel="shortcut icon" href="resource/images/favicon.png"
             type="image/x-icon">
         <!-- CSS FILE -->
+        <link rel="stylesheet" href="vandors/css/uikit.min.css">
         <link rel="stylesheet" href="vandors/css/normalize.css">
+        <link rel="stylesheet" href="vandors/css/animate.css">
         <link rel="stylesheet" href="resource/css/main.css">
         <link rel="stylesheet" href="resource/css/queries.css">
 
     </head>
     <body>
-
         <!-- start header section -->
-
+    
         <header id="hero">
-            <nav class="clearfix">
+            <div id="particles-js"></div>
+            <nav class="clearfix"  uk-sticky="top: 200; bottom: #animation">
                 <div class="row">
                     <div class="logo">
                         <a href="#">
@@ -31,26 +33,47 @@
                         </a>
                     </div>
                     <div class="menu">
-                        <a href="#">
-                            <ion-icon name="menu-outline"></ion-icon>
+                        <a href="javascript:void(0)">
+                            <ion-icon name="menu-outline" class="open-menu"></ion-icon>
                         </a>
                     </div>
                 </div>
             </nav>
-            <div class="hero-text-box">
-              
-                    <h1>paul-lapkin</h1><br>
-                    <span>#User Experience  #Music  #Creative Direction</span>
+
+            <div class="menu-container" id="navber">
+                <div class="close-btn">
+                    <a href="javascript:void(0)"><ion-icon name="close-circle-outline" class="close-menu"></ion-icon></a> 
                 </div>
-           
+                <ul>
+                    <li><a href="#hero" class="menu-but">home</a></li>
+                    <li><a href="#about" class="menu-but">about</a></li>
+                    <li><a href="#process" class="menu-but">process</a></li>
+                    <li><a href="#exp" class="menu-but">experience</a></li>
+                    <li><a href="#work" class="menu-but">portfolio</a></li>
+                    <li><a href="#tm" class="menu-but">testimonial</a></li>
+                    <li><a href="#contact" class="menu-but">contact</a></li>
+                </ul>
+
+            </div>
+
+        
+        <div class="hero-text-box ">
+              
+               <div class="row" uk-scrollspy="cls:uk-animation-scale-up;   uk-filter-control=" repeat: true>
+                <h1>paul-lapkin</h1><br>
+                <span>#User Experience  #Music  #Creative Direction</span>
+        
+               </div>
+        </div>
             <div class="next-section">
                 <div class="row">
-                    <a href="#">
+                    <a href="#about">
                         <ion-icon name="arrow-down-circle-outline"></ion-icon>
                     </a>
                 </div>
             </div>
         </header>
+    
          <!-- end header section -->
 
         <!-- start About section -->
@@ -65,17 +88,15 @@
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquipex ea commodo consequat.</p>
                         <p>Duis autem vel eum iriure dolorin hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore.</p>
                         <div class="about-cta-btn">
-                            <a href="#" class="btn btn-full">Hire Me!</a>
+                            <a href="#" class="btn btn-full wow tada wow fadeInLeft">Hire Me!</a>
                         </div>
                     </div>
                 </div>
             </div>                
         </section>
-
          <!-- end About section -->
 
         <!-- start Process section -->
-
         <section id="process">
                 <div class="row">
                         <div class="section-title">
@@ -83,25 +104,25 @@
                            <p>Hi I'm Paul lapkin, Experience crafter from Canada</p>
                         </div>
                         <div class="process-grid">
-                            <div class="process-grid-item">
+                            <div class="process-grid-item wow fadeInLeft" data-wow-duration= "1" data-wow-delay=".5s">
                                 <div class="process-icon">
                                         <ion-icon name="desktop-outline"></ion-icon>
                                 </div>
                                 <h4>design</h4>
                             </div>
-                            <div class="process-grid-item">
+                            <div class="process-grid-item wow fadeInLeft" data-wow-duration= "1" data-wow-delay="1s">
                                 <div class="process-icon">
                                         <img src="resource/images/icon.png" alt="">
                                 </div>
                                 <h4>development</h4>
                             </div>
-                            <div class="process-grid-item">
+                            <div class="process-grid-item wow fadeInLeft" data-wow-duration= "1" data-wow-delay="1.5s">
                                 <div class="process-icon">
                                     <img src="resource/images/icon3.png" alt="">
                                 </div>
                                 <h4>testing</h4>
                             </div>
-                            <div class="process-grid-item">
+                            <div class="process-grid-item wow fadeInLeft" data-wow-duration= "1" data-wow-delay="2s">
                                 <div class="process-icon">
                                     <img src="resource/images/icon4.png" alt="">
                                 </div>
@@ -111,10 +132,7 @@
                 </div>
         </section>
         <!-- end Process section -->
-        
-
            <!-- start experience section -->
-
         <section id="exp">
             <div class="row">
                 <div class="exp-grid">
@@ -159,40 +177,45 @@
                      <h2>My Latest Works</h2>
                      <p>Hi I'm Paul lapkin, Experience crafter from Canada</p>  
                  </div>
-                 <div class="work-filter">
-                     <button type="button">all</button>
-                     <button type="button">design</button>
-                     <button type="button">web development</button>
-                     <button type="button">worlpress</button>
-                 </div>
-                 <div class="work-grid">
-                     <div class="work-grid-item">
-                         <img src="resource/images/img1.jpg" alt="work">
-                     </div>
-                     <div class="work-grid-item">
-                        <img src="resource/images/img2.jpg" alt="work">
+                <div>
+                    <div class="work-filter">
+                        <button type="button" data-filter="all" >all</button>
+                        <button type="button" data-filter=".design">design</button>
+                        <button type="button" data-filter=".web">web development</button>
+                        <button type="button" data-filter=".wp">worlpress</button>
                     </div>
-                    <div class="work-grid-item">
-                        <img src="resource/images/img3.jpg" alt="work">
+                    <div class="work-grid" uk-grid uk-lightbox="animation: slide">
+                        <div class="work-grid-item mix design">
+                            <a href="resource/images/img1.jpg" data-caption="Design"><img src="resource/images/img1.jpg" alt="work"></a>
+                            
+                        </div>
+                        <div class="work-grid-item  mix wp">
+                            <a href="resource/images/img2.jpg" data-caption="Worldpress"><img src="resource/images/img2.jpg" alt="work"> </a>
+                           
+                       </div>
+                       <div class="work-grid-item mix design">
+                           <a href="resource/images/img3.jpg" data-caption="Design"><img src="resource/images/img3.jpg" alt="work"></a>
+                         
+                       </div>
+                       <div class="work-grid-item mix wp">
+                           <a href="resource/images/img4.jpg" data-caption="worldpress"><img src="resource/images/img4.jpg" alt="work"></a>
+                       </div>
+                       <div class="work-grid-item mix web">
+                           <a href="resource/images/img5.jpg" data-caption="web development"><img src="resource/images/img5.jpg" alt="work"></a>
+                       </div>
+                       <div class="work-grid-item mix wp "> 
+                          <a href="resource/images/img6.jpg" data-caption="worlpress"> <img src="resource/images/img6.jpg" alt="work"></a>
+                       </div>
+                       <div class="work-grid-item mix web">
+                          <a href="resource/images/img7.jpg" data-caption="web development"> <img src="resource/images/img7.jpg" alt="work"></a>
+                       </div>
                     </div>
-                    <div class="work-grid-item">
-                        <img src="resource/images/img4.jpg" alt="work">
-                    </div>
-                    <div class="work-grid-item">
-                        <img src="resource/images/img5.jpg" alt="work">
-                    </div>
-                    <div class="work-grid-item">
-                        <img src="resource/images/img6.jpg" alt="work">
-                    </div>
-                    <div class="work-grid-item">
-                        <img src="resource/images/img7.jpg" alt="work">
-                    </div>
-                 </div>
+                </div>
              </div>
          </section>   
             <!-- end work section -->
              <!-- start testimonial section -->
-
+            
              <section id="tm">
                  <div class="row">
                      <div class="tm-grid">
@@ -271,12 +294,16 @@
               </section>
 
                 <!-- end footer section -->
-
-     
-
             <!-- JS FILE -->
             <script src="vandors/js/modernizr-3.11.2.min.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script src="vandors/js/particles.min.js"></script>
+            <script src="vandors/js/app.js"></script>
+            <script src="vandors/js/uikit.min.js"></script>
+            <script src="vandors/js/uikit-icons.min.js"></script>
             <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+            <script src="vandors/js/mixitup.min.js"></script>
+            <script src="vandors/js/wow.min.js"></script>
             <script src="resource/js/main.js"></script>
 
      </body>
