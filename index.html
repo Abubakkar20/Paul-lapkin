@@ -25,7 +25,7 @@
     
         <header id="hero">
             <div id="particles-js"></div>
-            <nav class="clearfix"  uk-sticky="top: 200; bottom: #animation">
+            <nav class="clearfix"  data-uk-sticky="top: 200; bottom: #animation">
                 <div class="row">
                     <div class="logo">
                         <a href="#">
@@ -59,7 +59,7 @@
         
         <div class="hero-text-box ">
               
-               <div class="row" uk-scrollspy="cls:uk-animation-scale-up;   uk-filter-control=" repeat: true>
+               <div class="row" data-uk-scrollspy="cls:uk-animation-scale-up; uk-filter-control= repeat: true">
                 <h1>paul-lapkin</h1><br>
                 <span>#User Experience  #Music  #Creative Direction</span>
         
@@ -81,7 +81,7 @@
             <div class="row">
                 <div class="about-grid">
                     <div class="about-grid-item">
-                        <img src="resource/images/paul.jpg" alt="">
+                        <img class="paul" src="resource/images/paul.jpg" alt="">
                     </div>
                     <div class="about-grid-item">
                         <h5>Hi I'm Paul lapkin, Experience crafter from Canada</h5>
@@ -137,7 +137,7 @@
             <div class="row">
                 <div class="exp-grid">
                     <div class="exp-grid-item">
-                        <h3>Work Experience</h4>
+                        <h4>Work Experience</h4>
                         <div class="job">
                             <h4>Mad Max Design</h4>
                             <span>OCT 2013 - june 2014</span>
@@ -152,7 +152,7 @@
                         
                     </div>
                     <div class="exp-grid-item">
-                        <h3>Education</h4>
+                        <h4>Education</h4>
                             <div class="job">
                                 <h4>Mad Max Design</h4>
                                 <span>OCT 2013 - june 2014</span>
@@ -184,7 +184,7 @@
                         <button type="button" data-filter=".web">web development</button>
                         <button type="button" data-filter=".wp">worlpress</button>
                     </div>
-                    <div class="work-grid" uk-grid uk-lightbox="animation: slide">
+                    <div class="work-grid" data-uk-grid data-uk-lightbox="animation: slide">
                         <div class="work-grid-item mix design">
                             <a href="resource/images/img1.jpg" data-caption="Design"><img src="resource/images/img1.jpg" alt="work"></a>
                             
@@ -274,8 +274,8 @@
                       <div class="social-icon">
                           <ul>
                                  <li>
-                                     <a href="#"><ion-icon name="logo-twitter"></ion-icon><a>
-                                <li>
+                                     <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                                </li>
                               <li>
                                   <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
                                 </li>
@@ -288,7 +288,7 @@
                           </ul>
                       </div>
                       <div class="copyright">
-                        Copyright: AbuBakkar | All Rights Reserved. 
+                     <h5>   Copyright: AbuBakkar | All Rights Reserved. </h5>
                       </div>
                   </div>
               </section>

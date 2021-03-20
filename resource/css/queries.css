@@ -1,0 +1,137 @@
+@media only screen and (max-width: 1200px){
+    .row{
+        width: 100%;
+        padding: 0 5rem;
+    }
+}
+
+@media only screen and (max-width:1024px){
+    .uk-grid {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .about-grid {
+        text-align: center;
+        grid-template-columns: 1fr;
+        
+    }
+     .about-grid-item{
+        text-decoration: justify;
+     }
+     .about-grid-item img{
+    width: 55%;
+    }
+    .process-grid {
+    grid-template-columns: 1fr 1fr;
+    }
+    .work-grid{
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+    }
+    .uk-grid {
+        margin-left: 0;
+    }
+
+    .work-grid-item:nth-child(5) {
+        grid-column: 1/2;
+    }
+    .contact-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+}
+@media only screen and (max-width:768px){
+
+    .hero-text-box {
+        max-width: 100%;
+        text-align: center;
+    }
+    .hero-text-box h1{
+        font-size: 5rem;
+        margin: 1.5rem 0;
+    }
+    .hero-text-box span{
+        font-size: 1.8rem;
+    }
+    .exp-grid{
+        grid-template-columns: 1fr;
+    }
+    .section-title h2 {
+        font-size: 2.4rem;
+    }
+    h3{
+        font-size: 2.1rem;
+    }
+}
+@media only screen and (max-width:768px){
+
+    .hero-text-box h1{
+        font-size: 4rem;
+        margin: 1rem 0;
+    }
+    .hero-text-box span{
+        font-size: 1.4rem;
+    }
+
+    .work-grid{
+        grid-template-columns:repeat(1, 1fr)
+    }
+    .process-grid {
+        grid-template-columns:1fr;
+        }
+        h3{
+            font-size: 1.8rem;
+            margin-bottom: 3rem;;
+        }
+        .work-filter {
+            width:100%;
+        }
+}
+@media only screen and (max-width:480px){
+
+    #hero{
+        padding: 3rem 0;
+    }
+    html.body{
+        font-size: 55.5%
+    }
+    .about-grid-item img{
+        width: 75%;
+    }
+    #tm {
+        background-image: none;
+        background-color: whitesmoke;
+        text-align: center;
+    }
+    .tm-grid-item p{
+        width:100%;
+    }
+    .tm-grid {
+        grid-template-columns: 1fr;
+    }
+    .section-title{
+        margin-bottom: 4rem;;
+    }
+}
+@media only screen and (max-width:320px){
+
+    .hero-text-box h1{
+        font-size: 3rem;
+        margin: 1rem 0;
+    }
+    .hero-text-box span{
+        font-size: 1.2rem;
+    }
+    .section-title h2 {
+        font-size: 1.8rem;
+    }
+    h3{
+        font-size: 1.6rem;
+    }
+    .contact-grid-item:nth-child(1), .nested-contact-grid-item {
+        padding: 2rem;
+    }
+}
